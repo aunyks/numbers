@@ -1,0 +1,53 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#display-box {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  max-height: 50%;
+}
+
+#write-box {
+  height: 35%;
+  padding-top: 2.5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  width: 80%;
+}
+
+#write-box > textarea {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  max-width: 95%;
+}
+
+h5 {
+  position: absolute;
+  bottom: 5%;
+  margin-left: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #bbb;
+}

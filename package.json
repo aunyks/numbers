@@ -1,0 +1,22 @@
+{
+  "name": "numbers",
+  "version": "0.0.1",
+  "description": "A modern day Numbers Station.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aunyks/numbers.git"
+  },
+  "author": "Gerald Nash <g.nash.dev@gmail.com> (http://aunyks.com)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/aunyks/numbers/issues"
+  },
+  "homepage": "https://github.com/aunyks/numbers#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
