@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/aunyks/numbers#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "firebase-admin": "^4.0.1"
   }
 }
