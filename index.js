@@ -25,6 +25,8 @@ function encodeMsg(str){
   return newStr;
 }
 
+appendFile('msgs.log', 'This is a secret message...');
+
 var staticHomePage = function(req, res){
   res.sendFile(dir+'/static/index.html');
 };
