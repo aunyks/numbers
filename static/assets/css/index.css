@@ -51,3 +51,13 @@ a {
 a:hover {
   color: #bbb;
 }
+
+#write-box > a {
+  color: black;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
