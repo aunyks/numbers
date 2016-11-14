@@ -11,7 +11,7 @@ function httpGetAsync(theUrl, callback)
 
 function sendMsg(){
   var msgStr = document.getElementById('input-field').value.split(' ').join('+');
-  httpGetAsync('http://localhost:3000/new-msg?msg=' + msgStr,
+  httpGetAsync(window.location.href + 'new-msg?msg=' + msgStr,
   function(){
     alert('Your message has been sent! Thanks.');
   });
@@ -20,7 +20,7 @@ function sendMsg(){
 }
 
 window.onload = function(){
-  httpGetAsync('http://localhost:3000/msg', function(msg){
+  httpGetAsync(window.location.href + 'msg', function(msg){
     document.getElementById('msg').innerHTML = msg;
   });
 };
