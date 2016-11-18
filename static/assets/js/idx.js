@@ -22,7 +22,7 @@ function sendMsg(){
 }
 
 function infoBox(){
-  alert('This is a modern take on Cold War era Numbers Stations!\n'+
+  alert('This is a modern take on Cold War era Numbers Stations!\n\n'+
         'Write a secret message and post it. It will be encoded into numbers and publically displayed for all to see. Who will decipher it and respond to you?');
 }
 

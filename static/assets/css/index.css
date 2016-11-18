@@ -9,6 +9,14 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
+#info-txt {
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: right;
+  text-decoration: underline;
+}
+
 #display-box {
   margin-top: 5%;
   margin-left: 10%;
