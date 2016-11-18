@@ -5,7 +5,7 @@ var   fs           = require('fs'),
       env          = process.env;
 
 var delimiter = '====DELIMIT MSG====';
-var tempDir = dir + '/tmp';
+var tempDir = '/tmp'; //dir + '/tmp';
 var logFile = tempDir + '/msgs.log';
 
 function appendFile(filename, msg){
@@ -48,11 +48,11 @@ var getMsg = function(req, res){
       var randomIdx = getRandomInt(0, elems.length);
       var msg = encodeMsg(elems[randomIdx]).trim();
       if(msg === '10' || msg === '')
-        res.send('This is a secret message...');
+        res.send(encodeMsg('This is a secret message...'));
       else
         res.send(msg);
     } else {
-      res.send('This is a secret message...');
+      res.send(encodeMsg('This is a secret message...'));
     }
   });
 };

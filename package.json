@@ -1,6 +1,6 @@
 {
   "name": "numbers",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "A modern day Numbers Station.",
   "main": "index.js",
   "scripts": {
