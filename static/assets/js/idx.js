@@ -15,6 +15,10 @@ function sendMsg(){
   function(){
     alert('Your message has been sent! Thanks.');
   });
+  if(window.location.href.charAt(window.location.href.length - 1) === '#')
+    window.location = window.location.href.substring(0, window.location.href - 1);
+  else
+    window.location = window.location.href;
 }
 
 function infoBox(){
