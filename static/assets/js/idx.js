@@ -15,7 +15,11 @@ function sendMsg(){
   function(){
     alert('Your message has been sent! Thanks.');
   });
-  return false;
+}
+
+function infoBox(){
+  alert('This is a modern take on Cold War era Numbers Stations!\n'+
+        'Write a secret message and post it. It will be encoded into numbers and publically displayed for all to see. Who will decipher it and respond to you?');
 }
 
 window.onload = function(){
