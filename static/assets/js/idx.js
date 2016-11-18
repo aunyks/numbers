@@ -15,12 +15,16 @@ function sendMsg(){
   function(){
     alert('Your message has been sent! Thanks.');
   });
-  console.log(document.getElementById('input-field').value)
   return false;
 }
 
 window.onload = function(){
-  httpGetAsync(window.location.href + 'msg', function(msg){
-    document.getElementById('msg').innerHTML = msg;
-  });
+  if(window.location.href.charAt(window.location.href.length - 1) === '#')
+    httpGetAsync(window.location.href.substring(0, window.location.href - 1) + 'msg', function(msg){
+      document.getElementById('msg').innerHTML = msg;
+    });
+  else
+    httpGetAsync(window.location.href + 'msg', function(msg){
+      document.getElementById('msg').innerHTML = msg;
+    });
 };
